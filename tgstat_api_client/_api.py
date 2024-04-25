@@ -14,7 +14,7 @@ class HTTPClient:
         self._token = token
 
 
-class TGStatClient(HTTPClient):
+class TGStatAPI(HTTPClient):
     @staticmethod
     def __validate_response(response: dict) -> bool | None:
         if response.get('status') == 'ok':

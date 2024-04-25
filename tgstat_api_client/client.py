@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from typing import Literal
 
-from tgstat_api_client._http import TGStatClient
+from tgstat_api_client._api import TGStatAPI
 from tgstat_api_client.models.participants_data import ParticipantsData
 from tgstat_api_client.models.post import Post
 from tgstat_api_client.models.stat import StatChat, StatChannel
@@ -12,7 +12,7 @@ class TGStat:
     BASE_URL = 'https://api.tgstat.ru'
 
     def __init__(self, token: str):
-        self._client = TGStatClient(self.BASE_URL, token)
+        self._client = TGStatAPI(self.BASE_URL, token)
 
     async def get_posts(self,
                         chat: str | int,
