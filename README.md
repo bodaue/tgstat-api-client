@@ -7,7 +7,7 @@ A python client for working with the TGStat API.
 ## Installation
 
 ```Bash
-pip install https://github.com/bodaue/tgstat-api-client.git
+pip install git+https://github.com/bodaue/tgstat-api-client.git
 ```
 
 ## Usage
