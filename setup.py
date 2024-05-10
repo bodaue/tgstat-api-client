@@ -23,7 +23,7 @@ setup(
     description='Python client for TgStat API',
     long_description=long_description,
     url='https://github.com/bodaue/tgstat-api-client',
-    author='Your Name',
+    author='Bodaue',
     author_email='tim-online@mail.ru',
     packages=find_packages(),
     install_requires=install_requires,
